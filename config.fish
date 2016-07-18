@@ -1,10 +1,14 @@
 # Path Variables for Development --------------------------
 
 # Drush
-set -x PATH /Users/brian/.composer/vendor/drush/drush $PATH
+if test -e ~/.composer/vendor/drush/drush/drush
+  set -x PATH "$HOME/.composer/vendor/drush/drush" $PATH
+end
 
 # MongoDB
-set -x PATH /usr/local/mongodb/bin $PATH
+if test -e /usr/local/mongodb/bin/mongod
+  set -x PATH /usr/local/mongodb/bin $PATH
+end
 
 # NPM
 # https://github.com/sindresorhus/guides/blob/master/npm-global-without-sudo.md
@@ -16,12 +20,16 @@ set -e MANPATH
 set MANPATH $NPM_PACKAGES/shar/man:(manpath)
 
 # pyenv
-set -x PATH "$HOME/.pyenv/bin" $PATH
-. (pyenv init - | psub)
+if test -e ~/.pyenv/bin/pyenv
+  set -x PATH "$HOME/.pyenv/bin" $PATH
+  . (pyenv init - | psub)
+end
 
 # rbenv
-set -x PATH "$HOME/.rbenv/bin" $PATH
-. (rbenv init - | psub)
+if test -e ~/.rbenv/bin/rbenv
+  set -x PATH "$HOME/.rbenv/bin" $PATH
+  . (rbenv init - | psub)
+end
 
 # Aliases -------------------------------------------------
 # Show/Hide hidden files in OS X Finder
