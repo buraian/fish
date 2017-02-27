@@ -35,3 +35,6 @@ end
 # Show/Hide hidden files in OS X Finder
 alias show_files "defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app"
 alias hide_files "defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app"
+
+# Bandwidth Speed Test
+alias speed_test "wget -O /dev/null http://speedtest.wdc01.softlayer.com/downloads/test10.zip"
