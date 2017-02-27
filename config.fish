@@ -5,6 +5,13 @@ if test -e ~/.composer/vendor/drush/drush/drush
   set -x PATH "$HOME/.composer/vendor/drush/drush" $PATH
 end
 
+# ImageMagick
+if test -d /usr/local/Cellar/imagemagick
+  set MAGICK_HOME "/usr/local/Cellar/imagemagick/6.9.5-7"
+  set PATH $MAGICK_HOME/bin $PATH
+  set DYLD_LIBRARY_PATH "$MAGICK_HOME/lib/"
+end
+
 # MongoDB
 if test -e /usr/local/mongodb/bin/mongod
   set -x PATH /usr/local/mongodb/bin $PATH
@@ -32,6 +39,11 @@ if test -e ~/.rbenv/bin/rbenv
 end
 
 # Aliases -------------------------------------------------
+
+# Applications
+alias stree "/Applications/SourceTree.app/Contents/Resources/stree"
+alias sublime "/usr/local/bin/sublime"
+
 # Show/Hide hidden files in OS X Finder
 alias show_files "defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app"
 alias hide_files "defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app"
