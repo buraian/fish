@@ -6,7 +6,7 @@ if test -e ~/.composer/vendor/drush/drush/drush
 end
 
 # ImageMagick
-if test -d /usr/local/Cellar/imagemagick
+if test -d /usr/local/Cellar/imagemagick/6.9.5-7
   set MAGICK_HOME "/usr/local/Cellar/imagemagick/6.9.5-7"
   set PATH $MAGICK_HOME/bin $PATH
   set DYLD_LIBRARY_PATH "$MAGICK_HOME/lib/"
