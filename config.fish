@@ -47,3 +47,6 @@ alias sublime "/usr/local/bin/sublime"
 # Show/Hide hidden files in OS X Finder
 alias show_files "defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app"
 alias hide_files "defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app"
+
+# Mac Disable Sticky Keys for Sublime Text 3
+alias disable_sticky_keys_sublime "defaults write com.sublimetext.3 ApplePressAndHoldEnabled -bool false"
