@@ -50,3 +50,6 @@ alias hide_files "defaults write com.apple.finder AppleShowAllFiles NO; killall 
 
 # Bandwidth Speed Test
 alias speed_test "wget -O /dev/null http://speedtest.wdc01.softlayer.com/downloads/test10.zip"
+
+# Disable Sticky Keys (OS X)
+alias disable_sticky_keys_sublime "defaults write com.sublimetext.3 ApplePressAndHoldEnabled -bool false" # Sublime Text 3
