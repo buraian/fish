@@ -1,1 +1,1 @@
-/Users/brianclark/.config/fisherman/git_util/git_is_staged.fish
+/Users/brian/.config/fisherman/git_util/git_is_staged.fish

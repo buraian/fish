@@ -1,1 +1,1 @@
-/Users/brianclark/.config/fisherman/git_util/git_untracked_files.fish
+/Users/brian/.config/fisherman/git_util/git_untracked_files.fish

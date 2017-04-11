@@ -1,1 +1,1 @@
-/Users/brianclark/.config/fisherman/simple/functions/fish_prompt.fish
+/Users/brian/.config/fisherman/simple/functions/fish_prompt.fish

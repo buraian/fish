@@ -1,1 +1,1 @@
-/Users/brianclark/.config/fisherman/host_info/host_info.fish
+/Users/brian/.config/fisherman/host_info/host_info.fish
