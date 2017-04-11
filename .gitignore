@@ -1,3 +1,9 @@
 /fish_history
 /fishd.*
 .DS_Store
+
+# Oh My Fish
+/conf.d/omf.fish
+
+# Fisherman
+/functions/fisher.fish
