@@ -1,5 +1,10 @@
 # Path Variables for Development --------------------------
 
+# Composer (Global)
+if test -d $HOME/.composer/vendor/bin
+  set PATH $HOME/.composer/vendor/bin $PATH
+end
+
 # Drush
 if test -e ~/.composer/vendor/drush/drush/drush
   set -x PATH "$HOME/.composer/vendor/drush/drush" $PATH
