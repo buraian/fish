@@ -6,4 +6,25 @@
 /conf.d/omf.fish
 
 # Fisherman
+/completions/fisher.fish
+
+/functions/fish_prompt.fish
+/functions/fish_right_prompt.fish
 /functions/fisher.fish
+/functions/git_ahead.fish
+/functions/git_branch_name.fish
+/functions/git_is_detached_head.fish
+/functions/git_is_dirty.fish
+/functions/git_is_empty.fish
+/functions/git_is_repo.fish
+/functions/git_is_staged.fish
+/functions/git_is_stashed.fish
+/functions/git_is_tag.fish
+/functions/git_is_touched.fish
+/functions/git_repository_root.fish
+/functions/git_untracked_files.fish
+/functions/host_info.fish
+/functions/humanize_duration.fish
+/functions/last_job_id.fish
+/functions/pwd_info.fish
+/functions/pwd_is_home.fish
