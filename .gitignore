@@ -1,6 +1,9 @@
+.DS_Store
+
+# Fish
 /fish_history
 /fishd.*
-.DS_Store
+*.copy
 
 # Oh My Fish
 /conf.d/omf.fish
